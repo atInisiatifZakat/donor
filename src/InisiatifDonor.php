@@ -1,7 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Inisiatif\InisiatifDonor;
 
-class InisiatifDonor
+final class InisiatifDonor
 {
 }
