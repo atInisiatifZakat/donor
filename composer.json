@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_name/:package_slug",
-    "description": ":package_description",
+    "name": "inisiatif/donor",
+    "description": "Simple donor Rest API used at Inisiatif Zakat Indonesia",
     "keywords": [
-        ":vendor_name",
+        "inisiatif",
         "laravel",
-        ":package_slug"
+        "donor"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/atInisiatifZakat/donor",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Nuradiyana",
+            "email": "nuradiyana@izi.or.id",
             "role": "Developer"
         }
     ],
@@ -22,17 +22,18 @@
     "require-dev": {
         "laravel/pint": "^1.10",
         "orchestra/testbench": "^8.0",
+        "roave/security-advisories": "dev-latest",
         "vimeo/psalm": "^5.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Inisiatif\\InisiatifDonor\\": "src",
+            "Inisiatif\\InisiatifDonor\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Inisiatif\\InisiatifDonor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Inisiatif\\InisiatifDonor\\InisiatifDonorServiceProvider"
             ]
         }
     },
